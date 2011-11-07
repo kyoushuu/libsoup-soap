@@ -1,0 +1,45 @@
+                              LibSoup-SOAP
+                        SOAP Support for LibSoup
+
+ Copyright (C) 2011  Arnel A. Borja <kyoushuu@yahoo.com>
+ This program is free software: you can redistribute it and/or modify it
+ under the terms of the GNU General Public License as published by the
+ Free Software Foundation, either version 3 of the License, or (at your
+ option) any later version.
+
+
+                          General Information
+
+  LibSoup-SOAP is a library to add SOAP support to LibSoup.
+
+  LibSoup-SOAP is a free and open source software under the General
+Public License version 3.  Check the "License" section below for more
+information. See the file 'COPYING' for license terms and conditions.
+
+  The official web site is <http://libsoup-soap.sourceforge.net/>.
+
+
+                              Installation
+
+  LibSoup-SOAP's dependencies are LibSoup, GLib and LibXML2.
+
+  LibSoup-SOAP is tested to work for Linux and Microsoft Windows
+operating systems.
+
+  See the file 'INSTALL' for compiling instructions.
+
+
+                                License
+
+  This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by the
+Free Software Foundation, either version 3 of the License, or (at your
+option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
