@@ -1,7 +1,7 @@
 ## Process this file with automake to produce Makefile.in
 ## Created by Anjuta
 
-SUBDIRS = src po
+SUBDIRS = libsoup-soap po
 
 libsoup_soapdocdir = ${prefix}/doc/libsoup-soap
 libsoup_soapdoc_DATA = \

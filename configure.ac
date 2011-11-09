@@ -38,6 +38,6 @@ PKG_CHECK_MODULES(LIBSOUP_SOAP, [libxml-2.0 libsoup-2.4 glib-2.0 gobject-2.0 ])
 
 AC_OUTPUT([
 Makefile
-src/libsoup-soap-0.1.pc
-src/Makefile
+libsoup-soap/libsoup-soap-0.1.pc
+libsoup-soap/Makefile
 po/Makefile.in])
