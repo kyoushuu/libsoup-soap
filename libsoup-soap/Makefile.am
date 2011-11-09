@@ -15,8 +15,7 @@ AM_CFLAGS =\
 
 lib_LTLIBRARIES = libsoup-soap.la
 
-libsoup_soap_la_SOURCES = \
-	lib.c
+libsoup_soap_la_SOURCES =
 
 libsoup_soap_la_LDFLAGS =
 
