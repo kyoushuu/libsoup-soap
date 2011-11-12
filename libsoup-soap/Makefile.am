@@ -6,6 +6,7 @@ AM_CPPFLAGS = \
 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
 	-DPACKAGE_SRC_DIR=\""$(srcdir)"\" \
 	-DPACKAGE_DATA_DIR=\""$(datadir)"\" \
+	-I$(top_srcdir) \
 	$(LIBSOUP_SOAP_CFLAGS)
 
 AM_CFLAGS =\
@@ -15,7 +16,8 @@ AM_CFLAGS =\
 
 lib_LTLIBRARIES = libsoup-soap.la
 
-libsoup_soap_la_SOURCES =
+libsoup_soap_la_SOURCES = \
+	soup-soap-param.c
 
 libsoup_soap_la_LDFLAGS = \
 	-no-undefined
@@ -26,7 +28,8 @@ libsoup_soap_la_LIBADD = $(LIBSOUP_SOAP_LIBS)
 libsoup_soap_includedir = $(includedir)/libsoup-soap-0.1/libsoup-soap
 
 libsoup_soap_include_HEADERS = \
-	soup-soap.h
+	soup-soap.h \
+	soup-soap-param.h
 
 
 pkgconfigdir = $(libdir)/pkgconfig
