@@ -25,7 +25,7 @@ libsoup_soap_la_LIBADD = $(LIBSOUP_SOAP_LIBS)
 libsoup_soap_includedir = $(includedir)/libsoup-soap-0.1/libsoup-soap
 
 libsoup_soap_include_HEADERS = \
-	libsoup-soap.h
+	soup-soap.h
 
 
 pkgconfigdir = $(libdir)/pkgconfig
