@@ -22,11 +22,14 @@ libsoup_soap_la_LDFLAGS =
 libsoup_soap_la_LIBADD = $(LIBSOUP_SOAP_LIBS)
 
 
-include_HEADERS = \
+libsoup_soap_includedir = $(includedir)/libsoup-soap-0.1/libsoup-soap
+
+libsoup_soap_include_HEADERS = \
 	libsoup-soap.h
 
 
 pkgconfigdir = $(libdir)/pkgconfig
+
 pkgconfig_DATA = libsoup-soap-0.1.pc
 
 
