@@ -17,3 +17,4 @@
  */
 
 #include <libsoup-soap/soup-soap-param.h>
+#include <libsoup-soap/soup-soap-param-group.h>

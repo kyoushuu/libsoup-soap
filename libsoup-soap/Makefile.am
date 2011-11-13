@@ -17,7 +17,8 @@ AM_CFLAGS =\
 lib_LTLIBRARIES = libsoup-soap.la
 
 libsoup_soap_la_SOURCES = \
-	soup-soap-param.c
+	soup-soap-param.c \
+	soup-soap-param-group.c
 
 libsoup_soap_la_LDFLAGS = \
 	-no-undefined
@@ -29,7 +30,8 @@ libsoup_soap_includedir = $(includedir)/libsoup-soap-0.1/libsoup-soap
 
 libsoup_soap_include_HEADERS = \
 	soup-soap.h \
-	soup-soap-param.h
+	soup-soap-param.h \
+	soup-soap-param-group.h
 
 
 pkgconfigdir = $(libdir)/pkgconfig
