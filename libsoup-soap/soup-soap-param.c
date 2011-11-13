@@ -523,6 +523,91 @@ soup_soap_param_new (const gchar *name)
 	                     NULL);
 }
 
+SoupSoapParam *
+soup_soap_param_new_value (const gchar *name,
+                           const gchar *value)
+{
+	g_return_val_if_fail (name != NULL && *name != '\0', NULL);
+
+	SoupSoapParam *param = soup_soap_param_new (name);
+	soup_soap_param_set_value (param, value);
+
+	return param;
+}
+
+SoupSoapParam *
+soup_soap_param_new_string (const gchar *name,
+                            const gchar *value)
+{
+	g_return_val_if_fail (name != NULL && *name != '\0', NULL);
+
+	SoupSoapParam *param = soup_soap_param_new (name);
+	soup_soap_param_set_string (param, value);
+
+	return param;
+}
+
+SoupSoapParam *
+soup_soap_param_new_boolean (const gchar *name,
+                             gboolean value)
+{
+	g_return_val_if_fail (name != NULL && *name != '\0', NULL);
+
+	SoupSoapParam *param = soup_soap_param_new (name);
+	soup_soap_param_set_boolean (param, value);
+
+	return param;
+}
+
+SoupSoapParam *
+soup_soap_param_new_integer (const gchar *name,
+                             gint value)
+{
+	g_return_val_if_fail (name != NULL && *name != '\0', NULL);
+
+	SoupSoapParam *param = soup_soap_param_new (name);
+	soup_soap_param_set_integer (param, value);
+
+	return param;
+}
+
+SoupSoapParam *
+soup_soap_param_new_double (const gchar *name,
+                            gdouble value)
+{
+	g_return_val_if_fail (name != NULL && *name != '\0', NULL);
+
+	SoupSoapParam *param = soup_soap_param_new (name);
+	soup_soap_param_set_double (param, value);
+
+	return param;
+}
+
+SoupSoapParam *
+soup_soap_param_new_base64_binary (const gchar *name,
+                                   const guchar *value,
+                                   gsize value_len)
+{
+	g_return_val_if_fail (name != NULL && *name != '\0', NULL);
+
+	SoupSoapParam *param = soup_soap_param_new (name);
+	soup_soap_param_set_base64_binary (param, value, value_len);
+
+	return param;
+}
+
+SoupSoapParam *
+soup_soap_param_new_base64_string (const gchar *name,
+                                   const gchar *value)
+{
+	g_return_val_if_fail (name != NULL && *name != '\0', NULL);
+
+	SoupSoapParam *param = soup_soap_param_new (name);
+	soup_soap_param_set_base64_string (param, value);
+
+	return param;
+}
+
 const gchar *
 soup_soap_param_get_name (SoupSoapParam *param)
 {

@@ -49,6 +49,13 @@ struct _SoupSoapParam
 
 GType soup_soap_param_get_type (void) G_GNUC_CONST;
 SoupSoapParam *soup_soap_param_new (const gchar *name);
+SoupSoapParam *soup_soap_param_new_value (const gchar *name, const gchar *value);
+SoupSoapParam *soup_soap_param_new_string (const gchar *name, const gchar *value);
+SoupSoapParam *soup_soap_param_new_boolean (const gchar *name, gboolean value);
+SoupSoapParam *soup_soap_param_new_integer (const gchar *name, gint value);
+SoupSoapParam *soup_soap_param_new_double (const gchar *name, gdouble value);
+SoupSoapParam *soup_soap_param_new_base64_binary (const gchar *name, const guchar *value, gsize value_len);
+SoupSoapParam *soup_soap_param_new_base64_string (const gchar *name, const gchar *value);
 const gchar *soup_soap_param_get_name (SoupSoapParam *param);
 void soup_soap_param_set_name (SoupSoapParam *param, const gchar *name);
 const gchar *soup_soap_param_get_value (SoupSoapParam *param);
