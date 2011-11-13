@@ -17,7 +17,8 @@ lib_LTLIBRARIES = libsoup-soap.la
 
 libsoup_soap_la_SOURCES =
 
-libsoup_soap_la_LDFLAGS =
+libsoup_soap_la_LDFLAGS = \
+	-no-undefined
 
 libsoup_soap_la_LIBADD = $(LIBSOUP_SOAP_LIBS)
 
