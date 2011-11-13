@@ -1,4 +1,5 @@
 # List of source files containing translatable strings.
 
+libsoup-soap/soup-soap-message.c
 libsoup-soap/soup-soap-param.c
 libsoup-soap/soup-soap-param-group.c
