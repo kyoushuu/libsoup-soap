@@ -206,12 +206,6 @@ soup_soap_message_constructed (GObject *object)
 static void
 soup_soap_message_finalize (GObject *object)
 {
-	SoupSoapMessage *msg = SOUP_SOAP_MESSAGE (object);
-	SoupSoapMessagePrivate *priv = msg->priv;
-
-	g_clear_object (&priv->header);
-	g_clear_object (&priv->body);
-
 	G_OBJECT_CLASS (soup_soap_message_parent_class)->finalize (object);
 }
 
