@@ -853,7 +853,7 @@ soup_soap_param_get_base64_binary (SoupSoapParam *param,
 	GError *param_error;
 	const gchar *value;
 	guchar *base64_value;
-	gsize result_len;
+	gsize result_len = 0;
 
 	g_return_val_if_fail (SOUP_SOAP_IS_PARAM (param), NULL);
 
