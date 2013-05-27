@@ -14,6 +14,8 @@ AM_SILENT_RULES([yes])
 
 AC_PROG_CC
 
+m4_ifdef([AM_PROG_AR], [AM_PROG_AR])
+
 
 
 
